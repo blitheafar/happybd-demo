@@ -12,24 +12,24 @@ body {
 #cake {
   display: block;
   position: relative;
-  margin: -10em auto 0 auto;
+  margin: -50% auto 0 auto;
 }
 
 /* ============================================== Candle
 */
 .velas {
   background: #ffffff;
-  border-radius: 10px;
+  border-radius: 30px;
   position: absolute;
-  top: 228px;
-  left: calc(50% + 7.5px);
-  margin-left: -2.5px;
-  margin-top: -8.33333333px;
-  width: 5px;
-  height: 35px;
-  -webkit-transform: translateY(-300px);
-  -ms-transform: translateY(-300px);
-  transform: translateY(-300px);
+  top: 659px;
+  left: calc(50% + 12.5px);
+  margin-left: -7.5px;
+  margin-top: -25px;
+  width: 15px;
+  height: 105px;
+  -webkit-transform: translateY(-740px);
+  -ms-transform: translateY(-740px);
+  transform: translateY(-740px);
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -43,7 +43,7 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2.22222222px;
+  height: 6.6px;
 }
 
 .velas:after {
@@ -61,11 +61,11 @@ body {
 .fuego {
   border-radius: 100%;
   position: absolute;
-  top: -20px;
+  top: -60px;
   left: 50%;
-  margin-left: -2.2px;
-  width: 6.66666667px;
-  height: 18px;
+  margin-left: -6.6px;
+  width: 20px;
+  height: 54px;
 }
 
 .fuego:nth-child(1) {
@@ -147,6 +147,7 @@ body {
   font-weight: 300;
   font-style: italic;
   text-align: center;
+  font-size: 48px;
 }
 .text h1 {
   font-size: 1.4em;
