@@ -199,8 +199,8 @@
         context.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
         // clear canvas
-        context.fillStyle = "rgba(0, 0, 0, 0.05)";
-        context.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+        // context.fillStyle = "rgba(0, 0, 0, 0.05)";
+        // context.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
         var existingRockets = [];
 
@@ -245,9 +245,11 @@
         // update array with existing particles - old particles should be garbage collected
         particles = existingParticles;
 
-        while (particles.length > MAX_PARTICLES) {
-            particles.shift();
-        }
+        // while (particles.length > MAX_PARTICLES) {
+        //     particles.shift();
+        // }
+        particles.shift();
+
     };
 
     var launchFrom = function(x) {
