@@ -7,6 +7,8 @@ body {
 
 body {
   background: #feca57;
+  margin: 0;
+  padding: 0;
 }
 
 #cake {
@@ -19,17 +21,15 @@ body {
 */
 .velas {
   background: #ffffff;
-  border-radius: 30px;
+  border-radius: 15px;
   position: absolute;
-  top: 659px;
-  left: calc(50% + 12.5px);
-  margin-left: -7.5px;
-  margin-top: -25px;
-  width: 15px;
-  height: 105px;
-  -webkit-transform: translateY(-740px);
-  -ms-transform: translateY(-740px);
-  transform: translateY(-740px);
+  top: 281px;
+  left: 50%;
+  width: 7.5px;
+  height: 55px;
+  -webkit-transform: translateY(-450px);
+  -ms-transform: translateY(-450px);
+  transform: translateY(-450px);
   -webkit-backface-visibility: hidden;
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -43,16 +43,35 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 6.6px;
+  height: 2.22222222px;
 }
 
 .velas:after {
-  top: 25%;
+  top: 20%;
   left: 0;
 }
 
 .velas:before {
-  top: 45%;
+  top: 80%;
+  left: 0;
+}
+
+#velas:after,
+#velas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+
+#velas:before {
+  top: 40%;
+  left: 0;
+}
+
+#velas:after {
+  top: 60%;
   left: 0;
 }
 
@@ -61,11 +80,11 @@ body {
 .fuego {
   border-radius: 100%;
   position: absolute;
-  top: -60px;
-  left: 50%;
-  margin-left: -6.6px;
-  width: 20px;
-  height: 54px;
+  top: -30px;
+  left: calc(50% - 2.2px);
+  margin-left: -2.2px;
+  width: 10px;
+  height: 27px;
 }
 
 .fuego:nth-child(1) {
@@ -147,7 +166,7 @@ body {
   font-weight: 300;
   font-style: italic;
   text-align: center;
-  font-size: 48px;
+  font-size: 22px;
 }
 .text h1 {
   font-size: 1.4em;
