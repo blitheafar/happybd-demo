@@ -95,8 +95,8 @@
 
         var gradient = c.createRadialGradient(x, y, 0.1, x, y, r);
         gradient.addColorStop(0.1, "rgba(255,255,255," + this.alpha + ")");
-        gradient.addColorStop(0.5, "hsla(" + this.color + ", 50%, 50%, " + this.alpha + ")");
-        gradient.addColorStop(1, "hsla(" + this.color + ", 50%, 50%, 0.5)");
+        gradient.addColorStop(0.8, "hsla(" + this.color + ", 100%, 50%, " + this.alpha + ")");
+        gradient.addColorStop(1, "hsla(" + this.color + ", 100%, 50%, 0.1)");
 
         c.fillStyle = gradient;
 
@@ -196,14 +196,10 @@
             canvas.height = SCREEN_HEIGHT = window.innerHeight;
         }
 
-        // clear canvas
-        // context.fillStyle = "rgba(0, 0, 0, 0.05)";
-        // 清除canvas
-        context.clearRect(0,0,SCREEN_WIDTH,SCREEN_HEIGHT);
+        context.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
-        //设置背景填充色
-        context.fillStyle = 'rgba(255, 255, 255, 0)';
-        //绘制图形0,0起点
+        // clear canvas
+        context.fillStyle = "rgba(0, 0, 0, 0.05)";
         context.fillRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
         var existingRockets = [];
@@ -211,7 +207,7 @@
         for (var i = 0; i < rockets.length; i++) {
             // update and render
             rockets[i].update();
-            rockets[i].render(context);
+            // rockets[i].render(context);
 
             // calculate distance with Pythagoras
             var distance = Math.sqrt(Math.pow(SCREEN_WIDTH - rockets[i].pos.x, 2) + Math.pow(SCREEN_HEIGHT - rockets[i].pos.y, 2));
